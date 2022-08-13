@@ -7,8 +7,8 @@ public class Avante extends Car {
 
     public Avante(int distance) {
         this.distance = distance;
-        this.name = "Sonata";
-        this.distancePerLiter = 10;
+        this.name = "Avante";
+        this.distancePerLiter = 15;
     }
 
     @Override

@@ -6,8 +6,8 @@ public class K5 extends Car {
 
     public K5(int distance) {
         this.distance = distance;
-        this.name = "Sonata";
-        this.distancePerLiter = 10;
+        this.name = "K5";
+        this.distancePerLiter = 13;
     }
 
     @Override
