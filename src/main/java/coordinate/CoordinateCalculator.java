@@ -1,7 +1,10 @@
 package coordinate;
 
 public class CoordinateCalculator {
-    public static double calcuateLineLength(Coordinate first, Coordinate second) {
+    public static double calculateLineLength(Point first, Point second) {
         return first.calculateLineLength(second);
+    }
+
+    public static void calculateRectangleArea() {
     }
 }
