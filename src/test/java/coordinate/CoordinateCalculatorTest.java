@@ -38,6 +38,6 @@ public class CoordinateCalculatorTest {
 
         List<Point> pointList = new ArrayList<Point>();
 
-        CoordinateCalculator.calculateRectangleArea();
+        assertThat(CoordinateCalculator.calculateRectangleArea(Arrays.asList(p1, p2, p3, p4))).isEqualTo(96);
     }
 }
