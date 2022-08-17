@@ -40,4 +40,15 @@ public class CoordinateCalculatorTest {
 
         assertThat(CoordinateCalculator.calculateRectangleArea(Arrays.asList(p1, p2, p3, p4))).isEqualTo(96);
     }
+
+    @Test
+    void calculateTriangleArea() {
+        Point p1 = new Point(10, 10);
+        Point p2 = new Point(14, 15);
+        Point p3 = new Point(20, 8);
+
+        List<Point> pointList = new ArrayList<Point>();
+
+        assertThat(CoordinateCalculator.calculateTriangleArea(Arrays.asList(p1, p2, p3))).isEqualTo(29.0);
+    }
 }

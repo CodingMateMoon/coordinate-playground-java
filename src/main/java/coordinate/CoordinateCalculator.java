@@ -1,5 +1,6 @@
 package coordinate;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
@@ -28,5 +29,19 @@ public class CoordinateCalculator {
         }
 
         return width * height;
+    }
+
+    public static double calculateTriangleArea(List<Point> pointList) {
+        double[] lineLengths = new double[3];
+
+        lineLengths[0] = calculateLineLength(pointList.get(0), pointList.get(1));
+        lineLengths[1] = calculateLineLength(pointList.get(1), pointList.get(2));
+        lineLengths[2] = calculateLineLength(pointList.get(0), pointList.get(2));
+
+        for (double lineLength : lineLengths) {
+            System.out.println("Length : " + lineLength);
+        }
+
+        return Arrays.stream(lineLengths).sum();
     }
 }
